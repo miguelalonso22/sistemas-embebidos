@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
-#include <time.h>
+
 
 typedef struct Date
 {
@@ -23,23 +22,6 @@ int vicieso(int year)
     }
 }
 
-/*/
-int daysInMonth(int month, int year) {
-    int days;
-    if (month == 2) {
-        if (vicieso(year) == 1) {
-            days = 29;
-        } else {
-            days = 28;
-        }
-    } else if (month == 4 || month == 6 || month == 9 || month == 11) {
-        days = 30;
-    } else {
-        days = 31;
-    }
-    return days;
-}
-/*/
 
 int daysInMonth(int month, int year)
 {
