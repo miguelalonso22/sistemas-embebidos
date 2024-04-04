@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <conio.h>
 
 #define MAX_STUDENTS 100
 #define MAX_GRADES 50
@@ -11,13 +12,20 @@ typedef struct Students {
     int grades[MAX_GRADES];
 } Student;
 
+
 void HomeMenu(){
+    system("clear");
     printf("------ SISTEMA DE GESTIÓN DE ESTUDIANTES ------\n");
     printf("Seleccione la accion:\n");
     printf("1 - Ingresar nuevo alumno\n");
     printf("2 - Mostrar alumnos\n");
     printf("3 - Calcular promedio de un alumno\n");
     printf("0 - Salir\n");
+}
+
+void navigationMenu(){
+    printf("Presione cualquier tecla para continuar...");
+    getch();
 }
 
 int main() {
@@ -50,10 +58,12 @@ int main() {
             }
             studentCount++;
             printf("Alumno ingresado correctamente\n");
+            navigationMenu();
         }
         else if (choice == 2) {
             if (studentCount == 0) {
                 printf("No hay alumnos ingresados.\n");
+                navigationMenu();
                 continue;
             }
             for (int j = 0; j < studentCount; j++) {
@@ -66,10 +76,12 @@ int main() {
                 }
                 printf("\n");
             }
+             navigationMenu();
         } 
         else if (choice == 3) {
             if (studentCount == 0) {
                 printf("No hay alumnos ingresados.\n");
+                 navigationMenu();
                 continue;
             }
             int studentIndex;
@@ -77,6 +89,7 @@ int main() {
             scanf("%d", &studentIndex);
             if (studentIndex < 0 || studentIndex >= studentCount) {
                 printf("Índice fuera de rango.\n");
+                 navigationMenu();
                 continue;
             }
             int sum = 0, count = 0;
@@ -85,6 +98,7 @@ int main() {
                 count++;
             }
             printf("Promedio: %.2f\n", count > 0 ? (float)sum / count : 0.0);
+             navigationMenu();
         }
     }
     return 0;
