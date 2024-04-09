@@ -1,0 +1,60 @@
+~ cfile.c
+#include global.h
+Acá va el código de aplicación
+
+~ global.h
+#include global.c ----> IMPORTANTE
+#include <string.h>
+.
+.
+.
+typedef struct{
+
+}
+...
+Acá se prototipan las funciones
+
+~/include global.c 
+Acá se desarrollan las funciones prototipadas en global.h
+
+Menu:
+https://ladvien.com/command-line-menu-c/#:~:text=1%208%3A%20Clears%20the%20screen.%20...%202%209%3A,the%20real%20work%20for%20us.%20...%20M%C3%A1s%20elementos
+
+Students:
+- Listas enlazadas
+En lugar de reservar memoria previamente
+Student students[MAX_STUDENTS];
+
+Lo hacemos dinámicamente
+struct Nodos{
+    char nombre[50];
+    void* siguiente;
+}Nodo;
+
+Nodo nodo1;
+nodo1.nombre = "hola";
+nodo1.siguiente = NULL;
+
+Nodo nodo2;
+nodo1.siguiente = nodo2;
+
+nodo2.nombre = "mundo";
+nodo2.siguiente = NULL;
+
+En caso 1 creamos una lista de elementos struct con espacio reservado inicialmente.
+En caso 2 asignamos un puntero vacío a cada elemento que luego remplazamos por elemento siguiente.
+No es una lista. Son punteros recursivos. Si quiero acceder a algún elemento en particular, tengo que recorrer todos los nodos desde el inicio.
+
+Dos estructuras
+Una para la posición
+struct nodo{
+    void* info;
+    void* siguiente;
+}
+
+struct estudiante{
+    char nombre[50];
+    int edad;
+    ...
+}
+
