@@ -3,8 +3,15 @@
 #include <string.h>
 #include <conio.h>
 
+
 #define MAX_STUDENTS 100
 #define MAX_GRADES 50
+
+void clrscr()
+{
+    system("cls||clear");
+}
+
 
 typedef struct Students {
     char name[50];
@@ -14,7 +21,7 @@ typedef struct Students {
 
 
 void HomeMenu(){
-    system("clear");
+    clrscr();
     printf("------ SISTEMA DE GESTIÓN DE ESTUDIANTES ------\n");
     printf("Seleccione la accion:\n");
     printf("1 - Ingresar nuevo alumno\n");
