@@ -2,7 +2,7 @@
 
 int main() {
     init_lab();
-    coeff_t coeficientes[3] = {1, -3, 2}; // Aquí puedes cambiar los valores de los coeficientes
+    coeff_t coeficientes[3] = {1, 2, 1};
     eq_solver(coeficientes);
     return 0;
 }
