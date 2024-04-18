@@ -11,6 +11,8 @@
         "inversestring.h": "c",
         "stdio.h": "c",
         "datediff.h": "c",
-        "inversearray.h": "c"
+        "inversearray.h": "c",
+        "estudiante.h": "c",
+        "lista_estudiantes.h": "c"
     }
 }

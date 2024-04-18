@@ -65,12 +65,29 @@ int main() {
     print_matrix(&matrix_C);
     printf("\n");
 
-    date_t date1, date2;
-    printf("Enter first date (dd mm yyyy): ");
-    scanf("%d %d %d", &date1.day, &date1.month, &date1.year);
-    printf("Enter second date (dd mm yyyy): ");
-    scanf("%d %d %d", &date2.day, &date2.month, &date2.year);
-    printf("Diferencia entre fechas es de %d días\n", days_left(date1, date2));
+    // date_t date1, date2;
+    // printf("Enter first date (dd mm yyyy): ");
+    // scanf("%d %d %d", &date1.day, &date1.month, &date1.year);
+    // printf("Enter second date (dd mm yyyy): ");
+    // scanf("%d %d %d", &date2.day, &date2.month, &date2.year);
+    // printf("Diferencia entre fechas es de %d días\n", days_left(date1, date2));
 
+
+    Estudiante* cabeza = NULL;
+    agregarEstudiante(&cabeza, "Juan", "Pérez", "12345678", 10, 82.5);
+    agregarEstudiante(&cabeza, "Ana", "Gomez", "87654321", 9, 95.2);
+    agregarEstudiante(&cabeza, "Pedro", "Rodriguez", "45678912", 11, 76.3);
+    
+    mostrarLista(cabeza);
+    eliminarEstudiante(&cabeza, "87654321");
+    mostrarLista(cabeza);
+
+    agregarEstudiante(&cabeza, "Jorge", "Gonzalez", "34567891", 12, 61.0);
+    mostrarLista(cabeza);
+
+    ordenarPorCI(&cabeza);
+    mostrarLista(cabeza);
     return 0;
+
+
 }
