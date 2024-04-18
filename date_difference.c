@@ -131,6 +131,12 @@ int dateDifference(Date date1, Date date2)
 
 int validateDates(Date date1, Date date2)
 {
+    if (date1.year > date2.year)
+    {
+        printf("Por favor, ingrese la fecha más antigua primero\n");
+        return 0;
+
+    }
     if (date1.year < 0 || date2.year < 0)
     {
         return 0;

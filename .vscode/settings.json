@@ -5,6 +5,12 @@
         "global.h": "c",
         "swapelements.h": "c",
         "eqsolver.h": "c",
-        "string": "c"
+        "string": "c",
+        "wordcount.h": "c",
+        "stringcopy.h": "c",
+        "inversestring.h": "c",
+        "stdio.h": "c",
+        "datediff.h": "c",
+        "inversearray.h": "c"
     }
 }
