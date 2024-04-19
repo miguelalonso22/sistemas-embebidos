@@ -12,9 +12,9 @@
 #include "FindInString/FindInString.h"
 #include "DateDiff/DateDiff.h"
 
-// #include "ContarVocalesYConsonantes/ContarVocalesYConsonantes.h"
-// #include "CambioDeMayusculasYMinusculas/CambioDeMayusculasYMinusculas.h"
-// #include "SumaDeNumerosComplejos/SumaDeNumerosComplejos.h"
-// #include "ProductoDeNumerosComplejos/ProductoDeNumerosComplejos.h"
+#include "ContarVocalesYConsonantes/ContarVocalesYConsonantes.h"
+#include "CambioDeMayusculasYMinusculas/CambioDeMayusculasYMinusculas.h"
+#include "SumaDeNumerosComplejos/SumaDeNumerosComplejos.h"
+#include "ProductoDeNumerosComplejos/ProductoDeNumerosComplejos.h"
 
 #include "Estudiantes/lista_estudiantes.h"

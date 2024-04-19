@@ -87,6 +87,29 @@ int main() {
 
     ordenarPorCI(&cabeza);
     mostrarLista(cabeza);
+
+    char texto[] = "Este es un ejemplo de texto con 123 numeros"; //Los tildes no son registrados como vocales
+
+    printf("El texto contiene %d vocales.\n", vocales(texto));
+    printf("El texto contiene %d consonantes.\n", consonantes(texto));
+
+    char text[] = "Hola Mundo!";
+    printf("Original: %s\n", text);
+    
+    string_to_caps(text);
+    printf("En mayúsculas: %s\n", text);
+    
+    string_to_min(text);
+    printf("En minúsculas: %s\n", text);
+
+    complex_t a = {3, 2};
+    complex_t b = {3, -2};
+    complex_t c = sum(a, b);
+    printf("%.2f + %.2fi\n", c.real, c.imag);
+
+    complex_t d = prod(a, b);
+    printf("%.2f + %.2fi\n", d.real, d.imag);
+
     return 0;
 
 

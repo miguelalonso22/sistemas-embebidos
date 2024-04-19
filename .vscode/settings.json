@@ -13,6 +13,10 @@
         "datediff.h": "c",
         "inversearray.h": "c",
         "estudiante.h": "c",
-        "lista_estudiantes.h": "c"
+        "lista_estudiantes.h": "c",
+        "contarvocalesyconsonantes.h": "c",
+        "sumadenumeroscomplejos.h": "c",
+        "cambiodemayusculasyminusculas.h": "c",
+        "productodenumeroscomplejos.h": "c"
     }
 }
