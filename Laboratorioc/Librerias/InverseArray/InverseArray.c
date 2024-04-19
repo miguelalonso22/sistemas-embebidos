@@ -3,15 +3,16 @@ void print_reverse_array(void *array, size_t data_type, size_t array_size){
     
     for (int i = array_size-1; i >= 0; i--){
         if (data_type == 1){
-            printf("%d\n", ((char*)array)[i]);
+            printf("%d", ((char*)array)[i]);
         } else if (data_type == 2){
-            printf("%d\n", ((short*)array)[i]);
+            printf("%d", ((short*)array)[i]);
         } else if (data_type == 4){
-            printf("%ld\n", ((int*)array)[i]);
+            printf("%ld", ((int*)array)[i]);
         } else if (data_type == 8){
-            printf("%ld\n", ((long*)array)[i]);
+            printf("%ld", ((long*)array)[i]);
         }
        
     }
+    printf("\n");
 
 }

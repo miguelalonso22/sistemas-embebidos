@@ -1,4 +1,5 @@
 #include "BinToDec.h"
+
 int32_t bin2dec(int32_t binary, bool sign){
     int32_t decimal = 0;
     int32_t base = 1;

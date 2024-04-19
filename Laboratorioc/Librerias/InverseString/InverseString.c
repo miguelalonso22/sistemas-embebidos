@@ -10,4 +10,5 @@ char *reverse_string(char *string){
         reversed[j] = string[i-j-1];
     }
     reversed[i] = '\0';
+    printf("%s\n", reversed);
     return reversed;}
